@@ -1,0 +1,14 @@
+body {
+  padding-top: 50px;
+}
+.wrapper {
+  padding: 40px 15px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding:10px 0;
+  background-color: #222;
+  border-color: #080808;;
+}

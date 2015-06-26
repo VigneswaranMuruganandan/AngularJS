@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" id="ng-app" ng-app="mainapp">
+<head>
+    <title>BookMark Application</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <meta name="rating" content="General" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no" />
+    <meta name="copyright" content="2014" /> 
+    <meta name="robots" content="all" />
+    <meta name="googlebot" content="NOODP" />
+    <link rel="canonical" href=""/>
+    <link rel="stylesheet" type="text/css" href="_assets/css/reset.css" media="screen" /> 
+    <link href="_assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="_assets/css/customStyle.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+	<!--<script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
+</head>
+<body >
+<div  ng-app ng-controller="AppController">
+    <!-- header begin -->
+    <div ui-view="header"></div>
+    <!-- header end -->  
+
+    <!-- content begin -->
+    <div class="container wrapper">
+            <div ui-view="baseview"></div>
+        </div>
+    </div>
+    <!-- content end -->
+
+    <!--Footer  begin-->
+    <div ui-view="footer"></div>
+    <!-- Footer end -->
+</div>
+<script type="text/javascript" src="_assets/js/jquery/jquery.min.js"></script>
+
+<script type="text/javascript" src="_assets/js/boostrap/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="_assets/js/boostrap/ie10-viewport-bug-workaround.js"></script>
+
+<script type="text/javascript" src="_assets/js/angular/angular.js"></script>
+<script type="text/javascript" src="_assets/js/angular/angular-ui-router.js"></script>
+
+<script type="text/javascript" src="module/shared/sharedModule.js"></script>
+<script type="text/javascript" src="module/shared/sharedRoute.js"></script>
+<script type="text/javascript" src="module/shared/services/SharedService.js"></script>
+<script type="text/javascript" src="module/shared/Constants.js"></script>
+<script type="text/javascript" src="module/shared/directives/validators.js"></script>
+<script type="text/javascript" src="module/shared/filters/CustomFilter.js"></script>
+<script type="text/javascript" src="module/shared/controllers/NavigationController.js"></script>
+
+<script type="text/javascript" src="module/listbookmark/listbookmarkModule.js"></script>
+<script type="text/javascript" src="module/listbookmark/listbookmarkRoute.js"></script>
+<script type="text/javascript" src="module/listbookmark/services/ListbookmarkService.js"></script>
+<script type="text/javascript" src="module/listbookmark/directives/customDirective.js"></script>
+<script type="text/javascript" src="module/listbookmark/controllers/ListbookmarkController.js"></script>
+
+<script type="text/javascript" src="module/addbookmark/addbookmarkModule.js"></script>
+<script type="text/javascript" src="module/addbookmark/addbookmarkRoute.js"></script>
+<script type="text/javascript" src="module/addbookmark/services/AddbookmarkService.js"></script>
+<script type="text/javascript" src="module/addbookmark/directives/customDirective.js"></script>
+<script type="text/javascript" src="module/addbookmark/controllers/AddbookmarkController.js"></script>
+
+<script type="text/javascript" src="module/addfolder/addfolderModule.js"></script>
+<script type="text/javascript" src="module/addfolder/addfolderRoute.js"></script>
+<script type="text/javascript" src="module/addfolder/services/AddfolderService.js"></script>
+<script type="text/javascript" src="module/addfolder/directives/customDirective.js"></script>
+<script type="text/javascript" src="module/addfolder/controllers/AddfolderController.js"></script>
+
+
+<script src="app.js"></script>
+<script src="AppController.js"></script>
+</body>
+</html>
